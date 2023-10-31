@@ -35,5 +35,8 @@ bibliotheque = {
 }
 
 while True:
-    input("")
-    
+    command = input("Que voulez faire ?\n \"afficher\n pour afficher la liste des livres\n \"fin\" pour terminer la requête : ")
+    if command == "fin":
+        break
+    elif command == "afficher"
+
