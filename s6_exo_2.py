@@ -38,7 +38,7 @@ while True:
     print(" ")
     print("=== Bibliothèque ===")
     print(" ")
-    command = input("Que voulez faire ?\n \"afficher\" pour afficher la liste des livres\n \"ajouter\" pour ajouter un livre à la bibliothèque\n \"supprimer\" pour supprimer un livre de la bibliothèque\n \"rechercher\" pour rechercher \"fin\" pour terminer la requête\n Commande : ")
+    command = input("Que voulez faire ?\n \"afficher\" pour afficher la liste des livres\n \"ajouter\" pour ajouter un livre à la bibliothèque\n \"supprimer\" pour supprimer un livre de la bibliothèque\n \"rechercher\" pour rechercher un mot\n \"fin\" pour terminer la requête\n Commande : ")
     if command == "fin":
         break
 
