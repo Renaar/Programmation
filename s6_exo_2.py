@@ -35,9 +35,33 @@ bibliotheque = {
 }
 
 while True:
-    command = input("Que voulez faire ?\n \"afficher\n pour afficher la liste des livres\n \"fin\" pour terminer la requête : ")
+    print(" ")
+    print("=== Bibliothèque ===")
+    print(" ")
+    command = input("Que voulez faire ?\n \"afficher\" pour afficher la liste des livres\n \"ajouter\" pour ajouter un livre à la bibliothèque\n \"supprimer\" pour supprimer un livre de la bibliothèque\n \"rechercher\" pour rechercher \"fin\" pour terminer la requête\n Commande : ")
     if command == "fin":
         break
-    elif command == "afficher"
 
-#test
+    elif command == "afficher":
+        count = 0
+        print(" ")
+        print("====================")
+        print("Contenu de la bibliothèque")
+        print("====================")
+        print(" ")
+        for i in bibliotheque:
+            print("Clé : " + str(i))
+            print("Titre : " + bibliotheque[i])
+            print(" ")
+            print("==========")
+            print(" ")
+            count += 1
+        print("Nombre de livres : " + str(count))
+
+    elif command == "ajouter":
+        bibliotheque[input("Référence : ")] = input("Titre : ")
+    
+    elif command == "supprimer":
+        bibliotheque.pop("Référence à supprimer ? ")
+
+    elif command == "rechercher":
