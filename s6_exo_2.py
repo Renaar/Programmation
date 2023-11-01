@@ -121,13 +121,13 @@ while True:
 
         else:
             print(" ")
-            print("Le livre n'existe pas.")
+            print("Cette référence n'existe pas.")
             print(" ")
 
     elif command == "emprunts":
         if bool(emprunt) is False:
             print(" ")
-            print("Aucun livre n'a été emprunté")
+            print("Aucun livre n'a été emprunté.")
         else:
             print(" ")
             print(10 * "=")
