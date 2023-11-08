@@ -125,9 +125,10 @@ def synthèse_acides_aminés(arn2):
             if codon_check in aa:
                 acides_aminés.append(aa[codon_check])
                 codon_check = ""
-    print("=== Séquence d'acides aminés ===\n " + str(acides_aminés))
+    return acides_aminés
 
 adn_valide = verif_adn(sequence_adn)
 arn_messager = creation_arn_messager(adn_valide)
 arn_messager2 = verif_stop(arn_messager)
 liste_acides_aminés = synthèse_acides_aminés(arn_messager2)
+print("=== Séquence d'acides aminés ===\n " + str(liste_acides_aminés))
