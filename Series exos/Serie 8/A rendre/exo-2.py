@@ -3,9 +3,9 @@
 
 sequence_adn = "AAGCTCGAGACATACGATATACCTGAGCACCTTGTTAGACGAGCCACCTCTCAAAGTACCCCTATAATGAAAATCACTAAA"
 
-def complementaire_sequence_adn(adn):
+def complementaire_sequence_adn(sequence):
     new_sequence = ""
-    for i in adn:
+    for i in sequence:
         if i == "A":
             new_sequence += "T"
         elif i == "T":

@@ -3,7 +3,7 @@
 
 sequence_adn = "AAGCTCGAGACATACGATATACCTGAGCACCTTGTTAGACGAGCCACCTCTCAAAGTACCCCTATAATGAAAATCACTAAA"
 
-def complementaire_sequence_adn(adn):
+def creation_arn_messager(adn):
     new_sequence = ""
     for i in adn:
         if i == "A":
@@ -16,4 +16,4 @@ def complementaire_sequence_adn(adn):
             new_sequence += "C"
     print(new_sequence)
 
-complementaire_sequence_adn(sequence_adn)
+creation_arn_messager(sequence_adn)
